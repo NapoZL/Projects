@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Instagram</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/custom.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/fontawesome-all.css">
+</head>
+<body>
+  <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+    <img src="img/logo.png" class="img-fluid my-0 mr-md-auto ">
+    <!--Aqui deben estar tooodos los usuarios-->
+    <select id="usuario-actual" class="form-control" style="width: 200px;" onchange="cambiarUsuario()">
+      
+    </select>
+    &nbsp;
+    <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#nuevo-post">
+        Nuevo post
+    </button>
+    
+  </div>
+
+  <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+          <div class="row" id="posts">
+          </div><!--Fin div posts-->
+      </div>
+      <div class="col-lg-4">
+        <div class="row">
+            <!--Historias-->
+            <div class="col-lg-12">
+              <div class="card mb-4 shadow-sm" id="historias">
+                <div class="card-header">
+                  Stories
+                </div>
+                
+              </div>
+            </div><!--Fin Historias-->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Ventana modal para un nuevo post-->
+    <div class="modal fade" id="nuevo-post" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Nuevo post</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <textarea class="form-control" id="contenido-post" placeholder="Escribe algo"></textarea>
+              <input id="url-imagen" type="text" class="form-control" placeholder="Url-imagen">            
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+              <button type="button" class="btn btn-danger" onclick="guardarPost()">Publicar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Ventana modal para ver historias-->
+    <div class="modal fade" id="ver-historia" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Viendo Historias de <span id="usuarioSeleccionado"></span></h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body" id="detalleHistoria">
+              
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+      <div class="row">
+        <div class="col-12 col-md">
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="js/controlador.js"></script>
+</body>
+</html>
