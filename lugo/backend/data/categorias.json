@@ -1,0 +1,86 @@
+[
+  {
+    "nombreCategoria": "Farmacias",
+    "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+    "color": "#9CD0FA",
+    "icono": "fas fa-briefcase-medical",
+    "empresas": [1, 2, 3]
+  },
+  {
+    "nombreCategoria": "Restaurantes",
+    "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+    "color": "#FFA8AA",
+    "icono": "fas fa-bus-alt",
+    "empresas": [4, 5, 6]
+  },
+  {
+    "nombreCategoria": "Salud",
+    "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+    "color": "#D3B7F3",
+    "icono": "fas fa-bug",
+    "empresas": [7, 8, 9]
+  },
+  {
+    "nombreCategoria": "Caf\u00e9",
+    "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+    "color": "#0AD1AE",
+    "icono": "fas fa-box-open",
+    "empresas": [10, 11, 12]
+  },
+  {
+    "nombreCategoria": "Bebidas",
+    "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, modi!",
+    "color": "#F4845E",
+    "icono": "fas fa-cannabis",
+    "empresas": [13, 14, 15]
+  },
+  {
+    "nombreCategoria": "Regalos",
+    "descripcion": "Regalos",
+    "color": "red",
+    "icono": "fas fa-gifts",
+    "empresas": []
+  },
+  {
+    "nombreCategoria": "Comida",
+    "descripcion": "Comida",
+    "color": "yellow",
+    "icono": "fas fa-utensils",
+    "empresas": []
+  },
+  {
+    "nombreCategoria": "Donas",
+    "descripcion": "Donas",
+    "color": "brown",
+    "icono": "fas fa-compact-disc",
+    "empresas": []
+  },
+  {
+    "nombreCategoria": "Mandados",
+    "descripcion": "Mandados",
+    "color": "blue",
+    "icono": "fas fa-shopping-bag",
+    "empresas": []
+  },
+  {
+    "nombreCategoria": "Comida China",
+    "descripcion": "Comida China",
+    "color": "black",
+    "icono": "fas fa-cookie",
+    "empresas": []
+  },
+  {
+    "nombreCategoria": "Restaurantes",
+    "descripcion": "Restaurantes",
+    "color": "green",
+    "icono": "fas fa-drumstick-bite",
+    "empresas": []
+  },
+  {
+    "nombreCategoria": "Tienda",
+    "descripcion": "Tienda",
+    "color": "purple",
+    "icono": "fas fa-tshirt",
+    "empresas": []
+  }
+]
